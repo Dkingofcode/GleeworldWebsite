@@ -1,0 +1,27 @@
+/* Styling for the carousel container */
+.carousell {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%; /* Adjust the width as per your requirement */
+     
+}
+  
+  /* Styling for the images */
+  .carousell img {
+    height: 150px; /* Adjust image height as needed */
+    margin-right: 20px;
+    animation: move 15s linear infinite;
+  }
+  
+  /* Keyframes for moving the images */
+  @keyframes move {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

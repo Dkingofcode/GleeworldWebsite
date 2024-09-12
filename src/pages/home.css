@@ -1,0 +1,409 @@
+
+
+.Hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .hero-text, .hero-image {
+    opacity: 1;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+  }
+  
+  .hero-text.hidden, .hero-image.hidden {
+    transform: translateX(-100px); /* Text moves from left */
+  }
+  
+  .hero-image.hidden {
+    transform: translateX(100px); /* Image moves from right */
+  }
+  
+  .animate {
+    opacity: 1;
+    transform: translateX(0); /* Return to original position */
+  }
+  
+
+
+.serviceGroup{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px 50px;
+    flex-wrap: wrap;
+  }
+
+  .serviceGroup .Service-card article a{
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    align-items: center;
+    width: 150px;
+    padding: 10px 10px 20px 0px;
+  }
+  
+  .serviceGroup .Service-card article p{
+    width: 290px;
+  }
+
+  .serviceGroup .Service-card article a img{
+    width: 20px;
+    height: 20px;  
+  }
+
+  .Servicebtn{
+    border: 1px solid burlywood;
+    margin: 50px 0px;
+    padding: 10px;
+    border-radius: 50px;
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    gap: 30px;
+    
+  }
+
+
+
+
+.serviceGroup .Service-card article a img{
+    width: 20px;
+    height: 20px;  
+  }
+
+   
+  /* Styling for the images */
+   .carousell img {
+    height: 150px; /* Adjust image height as needed */
+    margin-right: 20px;
+    animation: move 90s linear infinite;
+  } 
+  
+  /* Keyframes for moving the images */
+  @keyframes move {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .Patners .carousel {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%; /* Adjust the width as per your requirement */
+    
+}
+
+  
+  /* Styling for the images */
+  .Patners .carousel-inner img {
+    height: 150px; /* Adjust image height as needed */
+    margin-right: 20px;
+    animation: move 15s linear infinite;
+  } 
+  
+  /* Keyframes for moving the images */
+  @keyframes move {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  
+  .Testimonials {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .slider {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .slider img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .Quotation {
+    display: block;
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+  
+  p {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .buttons button {
+    padding: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .buttons button:hover {
+    background-color: #ddd;
+  }
+  
+    
+  
+  
+
+.Contact button{
+    padding: 20px 10px;
+    border-radius: 30px;
+    margin-top: 50px;
+    background-color: transparent;
+    border: 1px solid #FF9933;
+    color: #FF9933; 
+  }
+  
+
+
+ .NewsLetter .subscribe{
+    border: 2px solid #FF9933;
+    margin: 0 auto;
+    width: 500px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+  }
+
+  .NewsLetter .subscribe input {
+    padding: 5px 12px;
+    border-radius: 30px;
+    width: 70%;
+  }
+
+  .NewsLetter .subscribe button {
+    background-color: #000040;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    width: 25%;
+  }
+
+  .left-footer span{
+    color: #FF9933;
+  }
+
+
+  .FooterSection {
+    padding: 0px 150px;
+  }
+
+
+
+
+
+
+
+
+@media  (max-width: 1200px){
+  .container{
+    background-color: yellowgreen;
+  }
+
+ 
+.Hero{
+    /* border: 1px solid grey; */
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 100px;
+    gap: 120px;
+    flex-wrap: wrap;
+  }
+
+  
+.Intro-block{
+    display: flex;
+    gap: 150px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    padding-bottom: 90px;
+  }
+  
+   
+.serviceGroup{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px 50px;
+    flex-wrap: wrap;
+  }
+
+  .serviceGroup .Service-card article a{
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    align-items: center;
+    width: 150px;
+    padding: 10px 10px 20px 0px;
+  }
+  
+  .serviceGroup .Service-card article p{
+    width: 290px;
+  }
+
+  .serviceGroup .Service-card article a img{
+    width: 20px;
+    height: 20px;  
+  }
+
+  .Servicebtn{
+    border: 1px solid burlywood;
+    margin: 50px 0px;
+    padding: 10px;
+    border-radius: 50px;
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    gap: 30px;
+    
+  }
+
+
+  
+
+  .Newscontainer{
+    display: flex;
+    text-align: left;
+    padding: 30px 30px;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+  }
+
+  .Achievements{
+    padding: 30px 10px;
+    background-color: blanchedalmond;
+    display: flex; 
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .Patners .Advert{
+    background-color: orange;
+    overflow: hidden;
+    margin: 10px auto;
+    border: 3px solid black;
+    display: flex;
+    border-radius: 20px;
+    gap: 90px;
+    padding: 30px 60px 0px 60px;
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+/*   
+.Patners .Advert .line{
+    color: white;
+    position: absolute;
+    left: 0;
+    
+    
+  } */
+  
+  /* .Patners .Advert .ellipse{
+     position: absolute;
+     right: 0;
+  }
+  
+  
+  .Patners .Advert article{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    font-size: 12px;
+    color: white;
+    text-align: left;
+    justify-content: center;
+  }
+  
+  
+  
+  .Patners .Advert article h1{
+     font-size: 40px;
+     font-weight: 500;
+  
+  }
+  
+  .Patners .Advert article button{
+    border: 3px solid black;
+    border-radius: 50px;
+    padding: 10px 5px;
+    width: 270px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+   */
+  
+   
+.Contact button{
+    padding: 20px 10px;
+    border-radius: 30px;
+    margin-top: 50px;
+    background-color: transparent;
+    border: 1px solid #FF9933;
+    color: #FF9933; 
+  }
+  
+
+
+ .NewsLetter .subscribe{
+    border: 2px solid #FF9933;
+    margin: 0 auto;
+    width: 500px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+  }
+
+  .NewsLetter .subscribe input {
+    padding: 5px 12px;
+    border-radius: 30px;
+    width: 70%;
+  }
+
+  .NewsLetter .subscribe button {
+    background-color: #000040;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    width: 25%;
+  }
+
+  .left-footer span{
+    color: #FF9933;
+  }
+
+}

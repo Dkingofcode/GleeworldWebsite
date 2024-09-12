@@ -1,0 +1,32 @@
+
+.NewsLetter .subscribe{
+    border: 2px solid #FF9933;
+    margin: 0 auto;
+    width: 500px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+  }
+
+  .NewsLetter .subscribe input {
+    padding: 5px 12px;
+    border-radius: 30px;
+    width: 70%;
+  }
+
+  .NewsLetter .subscribe button {
+    background-color: #000040;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    width: 25%;
+  }
+
+  .left-footer span{
+    color: #FF9933;
+  }
+
+  .FooterSection {
+    padding: 0px 150px;
+  }

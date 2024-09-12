@@ -1,0 +1,72 @@
+.Advert{
+    background-color: orange;
+    overflow: hidden;
+    margin: 20px auto;
+    border: 3px solid black;
+    display: flex;
+    border-radius: 20px;
+    padding: 60px 60px 0px 60px;
+    position: relative;
+    justify-content: space-between;
+    width: 1200px;  
+    flex-wrap: wrap;
+    gap: 90px
+  }
+  
+   .Advert .line{
+    color: white;
+    position: absolute;
+    left: 0;
+  }
+  
+   .Advert .ellipse{
+     position: absolute;
+     right: 0;
+  }
+  
+  
+  .Advert article{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    color: white;
+    text-align: left;
+    justify-content: center;
+  }
+  
+  
+  
+   .Advert article h1{
+     font-size: 40px;
+     font-weight: 500;
+  }
+  
+ .Advert article button{
+    border: 3px solid black;
+    border-radius: 50px;
+    padding: 10px 5px;
+    width: 270px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+
+
+  @media (max-width: 1200px){
+    .Advert{
+        background-color: lightsalmon;
+        overflow: hidden;
+        margin: 10px auto;
+        border: 3px solid black;
+        display: flex;
+        border-radius: 20px;
+        padding: 30px 60px 0px 60px;
+        position: relative;
+        justify-content: space-between;        
+         width: 800px;
+        flex-wrap: wrap;
+        gap: 90px
+      }
+      
+  };

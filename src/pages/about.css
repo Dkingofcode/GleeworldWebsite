@@ -1,0 +1,233 @@
+.mission{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    padding: 90px 10px;
+}
+
+.mission .missionText{
+    width: 700px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.Stakeholders{
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+.Stakeholders img{
+    padding: 0px 0px;
+}
+
+.Stakeholders .Card{
+   border: 1px solid darkgray;
+   /* width: 373px;
+   border-radius: 20px; */
+   display: flex;
+   gap: 20px;
+   flex-direction: column;
+   width: 383px;
+   border-radius: 20px;
+}
+
+.Stakeholders .Card p{
+   font-weight: 700;
+   font-size: 18px;
+}
+
+.Stakeholders .Card  a, .Stakeholders .Card p, .Stakeholders .Card h3{
+    padding: 0px 30px;
+}
+
+.Timeline {
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.Group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    height: 500px;
+  }
+  
+  .TimeLink {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .TimeLink div {
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
+  .Btnactive {
+    background-color: blue; /* Active button color */
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+  }
+  
+  .Btninactive {
+    background-color: gray;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+  }
+  
+  .history-content {
+    text-align: center;
+  }
+  
+  .history-content h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .history-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .history-content img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+/* .Timeline{
+    text-align: center;
+    height: 500px;
+}
+
+.Group{
+    border: 5px solid;
+    background: url("../assets/HISTORY.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+    width: 80%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 90px;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+.TimeLink{
+    border: 3px solid;
+    display: flex;
+    padding-top: 100px;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+.Btnactive{
+    background-color: black;
+    color: black;
+    border: 1px solid black;
+    content: '';
+    border-radius: 50%;
+    padding: 0px 9px;
+}
+
+.Btninactive{
+    background-color: lightgray;
+    color: lightgray;
+    border: 3px solid lightgray;
+    content: '';
+    border-radius: 50%;
+    padding: 0px 9px;
+}
+
+.TimeLink div{
+    position: relative;
+} */
+
+/* 
+.TimeLink div::after{
+    border: 2px solid slategray;
+    content: '';
+    display: flex;
+    border: 5px solid slategray;
+    background-color: red;
+    width: 0px;
+    height: 0px;
+} */
+
+
+.TimeLink div::before{
+    border: 2px solid slategray;
+    content: '';
+    display: absolute;
+    border-radius: 9px;
+    background-color: lightgray;
+    width: 50px;
+    height: 5px;
+    top: -400px;
+    left: 500px;
+    bottom: 5px;
+    display: flex;
+}
+
+.TimeLink  .Timeline div::before .Btnactive {
+  background-color: lightgray;
+  background-color: black;
+}
+
+
+.Operation{
+         
+     text-align: center;
+     padding: 90px 90px;
+     display: flex;
+     flex-direction: column;
+     gap: 50px;
+}
+
+.Operation .List{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.Operation .List .block{
+    width: 500px;
+    border: 1px solid lightgray;
+    background-color: gainsboro;
+    position: relative;
+    text-align: left;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.Operation .List .block img{
+    position: absolute;
+    right: 230px;
+    top: -30px;
+    border: 3px solid white;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 3px;
+    background-color: white;
+    color: rgb(249, 249, 249);
+}
+
+
+

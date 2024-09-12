@@ -1,0 +1,169 @@
+
+.navigation{
+    display: flex;
+    padding: 10px 20px;
+    gap: 200px;
+    
+    justify-content: center;
+    /* border-bottom: 2px solid grey; */
+    align-items: center;
+  }
+  
+  .navigation .Navlogo img{
+     width: 160px;
+  }
+  
+  .navigation nav{
+     margin: 0px 35px;
+  }
+  
+  .navigation nav ul{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    gap: 50px;
+    font-size: 20px;
+
+    justify-content: space-between;
+  }
+
+  .navigation nav ul li:link {
+    color: red;
+    
+  }
+
+
+  
+  .navigation .chatBtn{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    border: 4px solid green;
+    background-color: green;
+    padding: 7px 20px;
+    text-align: center;
+    color: white;
+    width: 290px;
+    align-items: center;
+    border-radius: 30px;
+  }
+  
+  .navigation .chatBtn img{
+    
+   width: 30px;
+   height: 30px;
+   
+  }
+  
+
+/* Hide the menu by default on mobile */
+/* .nav-links {
+  display: none;
+} */
+
+/* Show menu when the hamburger is clicked */
+.nav-links.open {
+  display: block;
+}
+
+/* Hamburger button styles */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+  /*   Header end        */
+  
+  @media  (max-width: 1200px){
+    .header{ 
+      display: flex;
+    }
+    
+    
+    .navigation{
+      display: flex;
+      margin: 0 auto;
+      width: 900px;
+      padding: 10px 20px;
+      gap: 200px;
+      justify-content: center;
+      /* border-bottom: 2px solid grey; */
+      align-items: center;
+        
+    }
+
+    .navigation .chatBtn{
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+      border: 4px solid green;
+      background-color: green;
+      padding: 7px 20px;
+      text-align: center;
+      color: white;
+      align-items: center;
+      border-radius: 30px;
+    }
+
+    .navigation nav{
+      margin: 0px 35px;
+      display: none;
+   }
+   
+   .navigation nav ul{
+     display: flex;
+     text-decoration: none;
+     list-style-type: none;
+     gap: 50px;
+     font-size: 20px;
+     justify-content: space-between;
+   }
+ 
+  
+  }
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show hamburger on mobile */
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav.open ul {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul li {
+    margin: 15px 0;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
