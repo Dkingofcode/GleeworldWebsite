@@ -10,7 +10,7 @@
   
   /* Styling for the images */
   .carousell img {
-    height: 150px; /* Adjust image height as needed */
+    height: 100px; /* Adjust image height as needed */
     margin-right: 20px;
     animation: move 15s linear infinite;
   }

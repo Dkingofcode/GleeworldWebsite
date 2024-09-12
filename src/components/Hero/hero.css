@@ -1,0 +1,7 @@
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+   .hero{
+    background-position: contain !important;
+   }
+ 
+}

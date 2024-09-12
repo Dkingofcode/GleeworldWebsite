@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 50px;
+    
   }
   
   .hero-text, .hero-image {
@@ -30,7 +31,7 @@
 .serviceGroup{
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 15px;
     padding: 10px 50px;
     flex-wrap: wrap;
   }
@@ -40,8 +41,8 @@
     justify-content: center;
     gap: 0px;
     align-items: center;
-    width: 150px;
-    padding: 10px 10px 20px 0px;
+    width: 120px;
+    padding: 1px 1px 2px 0px;
   }
   
   .serviceGroup .Service-card article p{
@@ -49,8 +50,8 @@
   }
 
   .serviceGroup .Service-card article a img{
-    width: 20px;
-    height: 20px;  
+    width: 10px;
+    height: 10px;  
   }
 
   .Servicebtn{
@@ -58,11 +59,12 @@
     margin: 50px 0px;
     padding: 10px;
     border-radius: 50px;
-    width: 240px;
+    width: 200px;
     display: flex;
     justify-content: center;
     margin: 50px auto;
     gap: 30px;
+    font-size: 12px;
     
   }
 
@@ -77,7 +79,7 @@
    
   /* Styling for the images */
    .carousell img {
-    height: 150px; /* Adjust image height as needed */
+    height: 100px; /* Adjust image height as needed */
     margin-right: 20px;
     animation: move 90s linear infinite;
   } 
@@ -104,7 +106,7 @@
   
   /* Styling for the images */
   .Patners .carousel-inner img {
-    height: 150px; /* Adjust image height as needed */
+    height: 100px; /* Adjust image height as needed */
     margin-right: 20px;
     animation: move 15s linear infinite;
   } 

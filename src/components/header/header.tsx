@@ -22,7 +22,7 @@ const Header = () => {
     <div className='header'>
       <div className='navigation'>
         <div className='Navlogo'>
-          <img src={mainLogo} alt='logo' />
+          <img width={50} height={60} src={mainLogo} alt='logo' />
         </div>
 
         {/* Hamburger Button */}
@@ -62,6 +62,10 @@ const Header = () => {
                 style={{  textDecoration: "none" }} 
                 to="/about-us">About Us</Link>
             </li>
+
+        <div className='chatBtn-mobile'>
+          <img src={whatsapp} alt='whatsapp icon' /> Chat
+        </div>
           </ul>
         </nav>
 

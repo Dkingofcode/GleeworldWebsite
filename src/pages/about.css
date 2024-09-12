@@ -1,14 +1,27 @@
+.Intro{
+    padding: 50px 0px;
+}
+
+
+
+
 .mission{
     display: flex;
     justify-content: center;
-    gap: 150px;
+    gap: 10px;
     padding: 90px 10px;
+    font-size: 12px;
 }
 
 .mission .missionText{
     width: 700px;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
+}
+
+.mission img{
+    width: 350px;
+    height: 300px;
 }
 
 .Stakeholders{
@@ -229,5 +242,11 @@
     color: rgb(249, 249, 249);
 }
 
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+ 
+}
 
 

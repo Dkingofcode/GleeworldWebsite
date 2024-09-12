@@ -129,7 +129,7 @@ function App() {
                 </div>
 
                 <div className='hero-image'>   
-                    <img src={heroimg} alt='heroimage'/>
+                    <img width={450} height={340} src={heroimg} alt='heroimage'/>
                 </div>
               </div>
 
@@ -143,7 +143,7 @@ function App() {
                <h1>Welcome to Gleeworld</h1>
 
                <div className='Intro-block'>
-                <img src={Group} alt="Introimg" />
+                <img src={Group} width={320} height={290} alt="Introimg" />
 
                 <article className='intro-text'>
                   <p>As a telepharmacy and delivery startup, we dedicated
@@ -171,7 +171,7 @@ function App() {
                <div className='serviceGroup'>
 
                <div className='Service-card'>
-                <img src={hospital}  alt="Introimg" />
+                <img width={330} src={hospital}  alt="Introimg" />
 
                 <article>
                   <h3>Telepharmacy Services</h3>
@@ -184,7 +184,7 @@ function App() {
                </div>
 
                <div className='Service-card'>
-                <img src={courier} alt="Introimg" />
+                <img width={330} src={courier} alt="Introimg" />
 
                 <article>
                   <h3>Delivery Services</h3>
@@ -197,7 +197,7 @@ function App() {
                </div>
 
                <div className='Service-card'>
-                <img src={delivery} alt="Introimg" />
+                <img width={330} src={delivery} alt="Introimg" />
 
                 <article>
                   <h3>Pharmaceutical Distribution</h3>

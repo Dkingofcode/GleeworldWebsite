@@ -15,7 +15,7 @@ const Advert = () => {
       <div className='Advert'>
                 <img className='line' src={line} alt="crossimg" />
                 <article>
-                  <h1>Enjoy 15% off your first<br /> monthly orders</h1>
+                  <h1>Enjoy 5% off your first<br /> monthly orders</h1>
 
                   <p>Take advantage of a 15% discount on your initial monthly orders and <br />
                   discover unparalleled value in our premium products and services.<br /> This exclusive
@@ -28,7 +28,7 @@ const Advert = () => {
                   </button> 
                 </article>
                 
-                <img src={Phone} alt="Phone image" />
+                <img className='phone' src={Phone} alt="Phone image" />
 
                 <img className='ellipse' src={Elipse} alt='Three bullet points'  />  
               </div>

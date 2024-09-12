@@ -86,9 +86,9 @@ const About = () => {
 
         <h1>We are a New Kind of Pharmacy</h1>
 
-        <img src={IntroPic} />
+        <img width={800} height={300}  src={IntroPic} />
 
-        <p><img src={IntroText} /></p>
+        <p><img width={800} src={IntroText} /></p>
       </div>  
 
     <div className='mission'>
