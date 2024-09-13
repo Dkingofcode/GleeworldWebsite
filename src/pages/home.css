@@ -498,15 +498,40 @@
    .navigation{
     background-color: white;
    }
-   .navigation nav ul{
+
+   nav ul {
+    display: none;
+    
+  }
+
+  .navigation nav ul{
     display: none;
     text-decoration: none;
     list-style-type: none;
     gap: 10px;
-    
+    display: none;  
     font-size: 10px;
     justify-content: space-between;
   }
+
+
+  nav.open ul {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul li {
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  
 
   
   .Hero .hero-image img{

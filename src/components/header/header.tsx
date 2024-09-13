@@ -20,6 +20,7 @@ const Header = () => {
   const copyPhoneNumber = () => {
     navigator.clipboard.writeText(phoneNumber).then(() => {
       alert('Phone number copied to clipboard');
+      console.log("Copy Phone Number")
     }).catch((err) => {
       console.error('Failed to copy text: ', err);
     })
@@ -50,11 +51,12 @@ const Header = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+    console.log("Open menu");
   };
 
-  useEffect(() => {
-     setCurrentIndex(currentIndex);
-  })
+  // useEffect(() => {
+  //    setCurrentIndex(currentIndex);
+  // })
 
   return (
     <div className='header'>
@@ -75,36 +77,36 @@ const Header = () => {
             <li>
               <Link
                          
-                onClick={() => {setCurrentIndex(0); console.log(location.pathname) }} 
-                style={{ textDecoration: "none", color: currentIndex === 0 && location.pathname === '/' ? color : defaultColor }} 
+                onClick={() => { handleChange(0);  }} 
+                style={{ textDecoration: "none",   }} 
                 to="/">Home</Link>
             </li>
             
             <li>
               <Link
                  
-                onClick={() => {setCurrentIndex(1);  console.log(location.pathname)}} 
+                onClick={() => { handleChange(1); }} 
                 style={{  textDecoration: "none", color: currentIndex === 1 && location.pathname === '/services' ? color : defaultColor }} 
                 to="/services">Services</Link>
             </li>
             <li>
               <Link 
               
-                onClick={() => {setCurrentIndex(2);  console.log(location.pathname) }} 
+                onClick={() => {handleChange(2) }} 
                 style={{  textDecoration: "none", color: currentIndex === 2 && location.pathname === '/medfinder-app' ? color : defaultColor }} 
                 to="/medfinder-app">Medfinder App</Link>
             </li>
             <li>
               <Link 
               
-                onClick={() => {setCurrentIndex(3);  console.log(location.pathname)}} 
+                onClick={() => { handleChange(3)}} 
                 style={{  textDecoration: "none", color: currentIndex === 3 && location.pathname === '/news' ? color : defaultColor }} 
                 to="/news">News</Link>
             </li>
             <li>
               <Link 
               
-                onClick={() => {setCurrentIndex(4); console.log(location.pathname)}} 
+                onClick={() => { handleChange(4)}} 
                 style={{  textDecoration: "none", color: currentIndex === 4 && location.pathname === '/about-us' ? color : defaultColor }} 
                 to="/about-us">About Us</Link>
             </li>
@@ -115,7 +117,7 @@ const Header = () => {
           </ul>
         </nav>
 
-        <div className='chatBtn'>
+        <div className='chatBtn' onClick={copyPhoneNumber}>
           Chat with a pharmacist <img src={whatsapp} alt='whatsapp icon' />
         </div> 
       </div>
