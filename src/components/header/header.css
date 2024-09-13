@@ -3,9 +3,9 @@
 
 .navigation{
     display: flex;
-    padding: 10px 20px;
-    gap: 100px;    
-    width: 1000px;
+    padding: 10px 10px;
+    gap: 160px;    
+    width: 1500px;
     margin: 0 auto;
     justify-content: center; 
     align-items: center;
@@ -24,13 +24,12 @@
     text-decoration: none;
     list-style-type: none;
     gap: 30px;
-    font-size: 16px;
+    font-size: 18px;
     justify-content: space-between;
   }
 
   .navigation nav ul li:link {
     color: red;
-    
   }
 
 
@@ -45,12 +44,13 @@
     text-align: center;
     color: white;
     width: 230px;
+    cursor: pointer;
     align-items: center;
     border-radius: 30px;
+    font-size: 17px;
   }
   
-  .navigation .chatBtn img{
-    
+  .navigation .chatBtn img{  
    width: 30px;
    height: 30px;
    

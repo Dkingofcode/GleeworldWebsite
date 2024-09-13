@@ -12,6 +12,9 @@ import Prescriptions from "../assets/Prescriptions.png";
 import downIcon from "../assets/IconDown.png";
 import arrow from "../assets/Vector.png";
 import "./services.css";
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 const Services = () => {
@@ -21,6 +24,19 @@ const Services = () => {
    const toggleDropdown = (index) => {
     setOpenIndex(openIndex === index ? null : index); // Close if clicked again, open if not
    };
+
+   const notifySuccess = () => {
+    toast.success('Coming soon!', {
+      position: "top-right"
+    });
+  };
+
+  const notifyError = () => {
+    toast.error('Failed to copy phone number!', {
+      position: "top-right",
+    });
+  };
+
 
    const faqData = [
     { question: "What are Telepharmacy Services?", answer: "Telepharmacy services allow remote consultation and prescription dispensing."},
@@ -48,7 +64,7 @@ const Services = () => {
             Schedule a Telepharmacy Consultation Today!
            </p>
 
-           <button>
+           <button onClick={notifySuccess}>
             Chat Now <img src={arrow} />
            </button>
          </div>
@@ -62,7 +78,7 @@ const Services = () => {
             ensures your medications arrive safely and promptly at your doorstep.
            </p>
 
-           <button>
+           <button onClick={notifySuccess}>
             Submit Order <img src={arrow} />
            </button>
          </div>
@@ -78,7 +94,7 @@ const Services = () => {
             your business!
            </p>
 
-           <button>
+           <button onClick={notifySuccess}>
             Submit Order <img src={arrow} />
            </button>
          </div>
@@ -92,7 +108,7 @@ const Services = () => {
             for small pharmacies. Boost your pharmacys efficiency with Gleeworlds Technology Tools!
            </p>
 
-           <button>
+           <button onClick={notifySuccess}>
             Check Now <img src={arrow} />
            </button>
          </div>
@@ -107,7 +123,7 @@ const Services = () => {
             Medfinder launches!
            </p>
 
-           <button>
+           <button onClick={notifySuccess}>
             Sign Up <img src={arrow} />
            </button>
          </div>
@@ -166,6 +182,8 @@ const Services = () => {
        <Advert  />
 
        <Footer />
+
+       <ToastContainer  />
     </div>
   )
 }

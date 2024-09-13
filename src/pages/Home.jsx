@@ -38,8 +38,9 @@ import facebook from "../assets/facebook.png";
 import {  useState } from 'react';
 import "./home.css";
 import googleplay from "../assets/Googleplay.png";
-
-
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { Link } from 'react-router-dom';
 
 
 function App() {
@@ -82,6 +83,18 @@ function App() {
     );
   };
 
+  const notifySuccess = () => {
+    toast.success('Coming soon!', {
+      position: "top-right"
+    });
+  };
+
+  const notifyError = () => {
+    toast.error('Failed to copy phone number!', {
+      position: "top-right",
+    });
+  };
+  
 
    // Function to move to the next image
   //  const goToNext = () => {
@@ -129,7 +142,7 @@ function App() {
                 </div>
 
                 <div className='hero-image'>   
-                    <img width={450} height={340} src={heroimg} alt='heroimage'/>
+                    <img width={650} height={440} src={heroimg} alt='heroimage'/>
                 </div>
               </div>
 
@@ -212,7 +225,7 @@ function App() {
                </div>
 
                <button className='Servicebtn'>
-                <p>Check all services <img src={arrow} /></p>
+               <Link to="/services" style={{ textDecoration: "none", color: "orange" }}> <p>Check all services <img src={arrow} /></p> </Link> 
                </button>
 
            </div>
@@ -271,10 +284,12 @@ function App() {
                </div>
 
            
-           <div className='Newsbtn'>
+           <Link style={{ color: "black", textDecoration: "none"}} to="/news">
+           <div  className='Newsbtn'>
             Read news
-            <img src={blackArrow} alt="news" />
+             <img  src={blackArrow} alt="news" />
             </div>
+           </Link>
            
            </div>
 
@@ -512,14 +527,14 @@ function App() {
              <div style={{ display: 'block'}} className='right-footer'>
                <h4>Social Media</h4>
                <div className='images'>
-                 <img src={Linkedin} />
-                 <img src={twitter} />
-                 <img src={instagram} />
-                 <img src={facebook} />
+                 <a><img src={Linkedin} /></a> 
+                 <a><img src={twitter} /></a> 
+                 <a><img src={instagram} /></a> 
+                 <a><img src={facebook} /></a> 
                </div>
                <p>Download the Medfinder App</p>
                <div className='googleplaybtn'>
-                  <img src={googleplay}  />
+                  <img onClick={notifySuccess} style={{ cursor: "pointer" }} src={googleplay}  /> 
                </div>
                <p>2024 Gleeworld Pharmacy</p>
                <p className='footer-links'><a>Terms of Service</a> | <a>Privacy Policy</a></p>
@@ -530,6 +545,8 @@ function App() {
             </footer>
 
             {/*  Footer  */}
+
+            <ToastContainer  />
 
      </div>
      </div>

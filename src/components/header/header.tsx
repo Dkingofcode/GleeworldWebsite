@@ -9,6 +9,16 @@ const Header = () => {
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const phoneNumber = '08033875224'; //     
+
+  const copyPhoneNumber = () => {
+    navigator.clipboard.writeText(phoneNumber).then(() => {
+      alert('Phone number copied to clipboard');
+    }).catch((err) => {
+      console.error('Failed to copy text: ', err);
+    })
+  }
+
   const handleChange = (index: number) => {
     setCurrentIndex(index); // Update the selected index to trigger color change
     setIsMenuOpen(false); // Close the menu when an item is clicked
@@ -22,7 +32,7 @@ const Header = () => {
     <div className='header'>
       <div className='navigation'>
         <div className='Navlogo'>
-          <img width={50} height={60} src={mainLogo} alt='logo' />
+         <a href='/'><img width={50} height={60} src={mainLogo} alt='logo' /></a> 
         </div>
 
         {/* Hamburger Button */}
@@ -63,7 +73,7 @@ const Header = () => {
                 to="/about-us">About Us</Link>
             </li>
 
-        <div className='chatBtn-mobile'>
+        <div className='chatBtn-mobile' onClick={copyPhoneNumber} style={{ cursor: 'pointer'}}>
           <img src={whatsapp} alt='whatsapp icon' /> Chat
         </div>
           </ul>
@@ -71,7 +81,7 @@ const Header = () => {
 
         <div className='chatBtn'>
           Chat with a pharmacist <img src={whatsapp} alt='whatsapp icon' />
-        </div>
+        </div> 
       </div>
     </div>
   );

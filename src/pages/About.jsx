@@ -86,9 +86,9 @@ const About = () => {
 
         <h1>We are a New Kind of Pharmacy</h1>
 
-        <img width={800} height={300}  src={IntroPic} />
+        <img  style={{ display: "flex",  margin: "0 auto", width: "800px" }}  src={IntroPic} />
 
-        <p><img width={800} src={IntroText} /></p>
+        <p><img width={1000} src={IntroText} /></p>
       </div>  
 
     <div className='mission'>
@@ -117,7 +117,7 @@ const About = () => {
             2022 Mandela Washington Fellowship - a US Government P...
            </p>
 
-           <a><img src={LinkedIn}  /></a>
+           <a href='https://ng.linkedin.com/in/bidemiojo'><img src={LinkedIn}  /></a>
         </div>
 
         <div className='Card'>
@@ -126,7 +126,7 @@ const About = () => {
            <p>CO-FOUNDER/Chief Pharmacist, Pharmacist for 12 years, Former
             District Manager at HealthPlus, managed 20 pharmacies...
            </p>
-           <a><img src={LinkedIn} /></a>
+           <a href='https://ng.linkedin.com/in/bimpe-ojo-95825596'><img src={LinkedIn} /></a>
         </div>
     </div>
     

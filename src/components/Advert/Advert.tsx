@@ -5,10 +5,25 @@ import Phone from "../../assets/Phonepic.png"
 import Elipse from "../../assets/Elipse.png";
 import "../../App.css";
 import "./advert.css";
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Advert = () => {
+  const notifySuccess = () => {
+    toast.success('Coming soon!', {
+      position: "top-right"
+    });
+  };
+
+  const notifyError = () => {
+    toast.error('Failed to copy phone number!', {
+      position: "top-right",
+    });
+  };
+
+
   return (
-    <div>
+    <div >
       
       {/*  Advertisement  */}
 
@@ -22,7 +37,7 @@ const Advert = () => {
                   offer is designed to provide you with a seamless<br /> introduction to our commitment to quality, affordability, and<br />
                   exceptional customer care.</p>
                 
-                  <button>
+                  <button onClick={notifySuccess}>
                     Download Medfinder
                      <img src={blackArrow}  />
                   </button> 
@@ -33,6 +48,7 @@ const Advert = () => {
                 <img className='ellipse' src={Elipse} alt='Three bullet points'  />  
               </div>
 
+              <ToastContainer  />
            </div>
 
   );

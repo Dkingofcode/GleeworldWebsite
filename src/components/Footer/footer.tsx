@@ -5,13 +5,27 @@ import twitter from "../../assets/Twitter.png";
 import instagram from "../../assets/Instagram.png";
 import facebook from "../../assets/facebook.png";
 import googleplay from "../../assets/Googleplay.png";
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Footer = () => {
-  return (
-    <div>
 
-            
+
+  const notifySuccess = () => {
+    toast.success('Coming soon!', {
+      position: "top-right"
+    });
+  };
+
+  const notifyError = () => {
+    toast.error('Failed to copy phone number!', {
+      position: "top-right",
+    });
+  };
+     
+  return (
+    <div>            
               
              {/*  NewsLetter  */}
 
@@ -45,14 +59,14 @@ const Footer = () => {
             <div style={{ display: 'block'}} className='right-footer'>
               <h4>Social Media</h4>
               <div className='images'>
-                <img src={Linkedin} />
-                <img src={twitter} />
-                <img src={instagram} />
-                <img src={facebook} />
+                <a><img src={Linkedin} />  </a> 
+                <a> <img src={twitter} /></a>
+                <a> <img src={instagram} /> </a>
+                <a> <img src={facebook} /> </a>
               </div>
               <p>Download the Medfinder App</p>
               <div className='googleplaybtn'>
-                 <img src={googleplay}  />
+                <a onClick={notifySuccess}> <img src={googleplay}  /> </a> 
               </div>
               <p>2024 Gleeworld Pharmacy</p>
               <p className='footer-links'><a>Terms of Service</a> | <a>Privacy Policy</a></p>
@@ -61,7 +75,7 @@ const Footer = () => {
             </div>
           
            </footer>
-
+           <ToastContainer />
            {/*  Footer  */}
 
     </div>

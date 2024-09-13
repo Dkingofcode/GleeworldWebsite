@@ -1,8 +1,13 @@
 .Intro{
     padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
-
+.Intro h5{
+    font-size: 19px;
+}
 
 
 .mission{
@@ -68,9 +73,13 @@
     align-items: center;
     flex-direction: column;
     
-    height: 500px;
+    height: 300px;
   }
   
+  .Timeline{
+        padding-top: 50px;
+  }
+
   .TimeLink {
     display: flex;
     flex-direction: row;
@@ -215,7 +224,7 @@
 
 .Operation .List{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
 }
