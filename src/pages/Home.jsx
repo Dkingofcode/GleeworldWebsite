@@ -142,7 +142,7 @@ function App() {
                 </div>
 
                 <div className='hero-image'>   
-                    <img width={650} height={440} src={heroimg} alt='heroimage'/>
+                    <img  src={heroimg} alt='heroimage'/>
                 </div>
               </div>
 
@@ -234,7 +234,7 @@ function App() {
 
             
            {/*  News     */} 
-           <div className='News'>
+           <div  className='News'>
                <p>Latest Developments</p>
                   <h1>News</h1>
 
@@ -414,7 +414,7 @@ function App() {
               <div className='Advert'>
                 <img className='line' src={line} alt="crossimg" />
                 <article>
-                  <h1>Enjoy 15% off your first<br /> monthly orders</h1>
+                  <h1>Enjoy 5% off your first<br /> monthly orders</h1>
 
                   <p>Take advantage of a 15% discount on your initial monthly orders and <br />
                   discover unparalleled value in our premium products and services.<br /> This exclusive
@@ -427,7 +427,7 @@ function App() {
                   </button> 
                 </article>
                 
-                <img src={Phone} alt="Phone image" />
+                <img className='phone' src={Phone} alt="Phone image" />
 
                 <img className='ellipse' src={Elipse} alt='Three bullet points'  />  
               </div>
@@ -527,14 +527,14 @@ function App() {
              <div style={{ display: 'block'}} className='right-footer'>
                <h4>Social Media</h4>
                <div className='images'>
-                 <a><img src={Linkedin} /></a> 
-                 <a><img src={twitter} /></a> 
-                 <a><img src={instagram} /></a> 
-                 <a><img src={facebook} /></a> 
+                 <a><img src={Linkedin} width={15} /></a> 
+                 <a><img src={twitter} width={15} /></a> 
+                 <a><img src={instagram} width={15} /></a> 
+                 <a><img src={facebook} width={15} /></a> 
                </div>
                <p>Download the Medfinder App</p>
                <div className='googleplaybtn'>
-                  <img onClick={notifySuccess} style={{ cursor: "pointer" }} src={googleplay}  /> 
+                  <img onClick={notifySuccess} width={90} style={{ cursor: "pointer" }} src={googleplay}  /> 
                </div>
                <p>2024 Gleeworld Pharmacy</p>
                <p className='footer-links'><a>Terms of Service</a> | <a>Privacy Policy</a></p>

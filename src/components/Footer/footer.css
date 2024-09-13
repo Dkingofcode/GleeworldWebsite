@@ -28,5 +28,14 @@
   }
 
   .FooterSection {
-    padding: 0px 150px;
+    padding: 0px 100px;
   }
+
+  .FooterSection p, .FooterSection a{
+    font-size: 15px;
+ }
+
+ .googleplaybtn{
+   
+   width: 100px;
+ }

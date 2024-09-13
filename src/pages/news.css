@@ -1,7 +1,5 @@
 .hero{
     /* border: 5px solid red; */
-    background: url("../assets//HeroSection.png");
-
      height: 300px;
 }
 
@@ -9,5 +7,9 @@
 .trending{
     text-align: center;
     font-size: 20px;
-    padding: 30px 0px;
+    padding: 90px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
 }

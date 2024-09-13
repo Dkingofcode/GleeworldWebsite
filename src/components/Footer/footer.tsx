@@ -59,14 +59,14 @@ const Footer = () => {
             <div style={{ display: 'block'}} className='right-footer'>
               <h4>Social Media</h4>
               <div className='images'>
-                <a><img src={Linkedin} />  </a> 
-                <a> <img src={twitter} /></a>
-                <a> <img src={instagram} /> </a>
-                <a> <img src={facebook} /> </a>
+                <a><img src={Linkedin} width={15} />  </a> 
+                <a> <img src={twitter} width={15} /></a>
+                <a> <img src={instagram} width={15} /> </a>
+                <a> <img src={facebook} width={15} /> </a>
               </div>
               <p>Download the Medfinder App</p>
               <div className='googleplaybtn'>
-                <a onClick={notifySuccess}> <img src={googleplay}  /> </a> 
+                <a onClick={notifySuccess}> <img width={90} src={googleplay}  /> </a> 
               </div>
               <p>2024 Gleeworld Pharmacy</p>
               <p className='footer-links'><a>Terms of Service</a> | <a>Privacy Policy</a></p>

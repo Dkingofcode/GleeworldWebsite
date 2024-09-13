@@ -3,16 +3,18 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 90px;
-  padding: 30px 70px;
+  padding: 70px 70px;
 }
 
 .services .article{
     border: 1px solid lightgray;
-    width: 370px;
+    width: 300px;
     border-radius: 20px;
+
 }
 
-.services .article img{
+.services .article > img{
+    width: 300px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -22,8 +24,9 @@
 } 
 
 .services .article p{
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 100;
+  padding-bottom: 50px;
 }
 
 .services .article h3{

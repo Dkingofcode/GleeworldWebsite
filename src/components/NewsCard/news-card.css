@@ -1,4 +1,4 @@
-/* News  */
+/* News 
 
 .News{
     text-align: center;
@@ -9,9 +9,15 @@
   .News > p,  .News > h1 {
     font-weight: 700;
   }
+
+  .News-card h3{
+    font-size: 12px;
+  }
+
+
   
   .News > p{
-    font-size: 20px;
+    font-size: 10px;
     padding: 20px 0px 0px 0px;
   }
   
@@ -62,4 +68,4 @@
      margin: 0 auto;
      width: 140px;
   }
-  
+   */

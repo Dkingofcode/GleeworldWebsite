@@ -60,8 +60,7 @@
 
 
   @media (max-width: 1200px){
-    .Advert{
-        background-color: lightsalmon;
+    .Advert{    
         overflow: hidden;
         margin: 10px auto;
         border: 3px solid black;
@@ -70,7 +69,25 @@
         padding: 30px 60px 0px 60px;
         position: relative;
         justify-content: space-between;        
-         width: 800px;
+         width: 500px;
+        flex-wrap: wrap;
+        gap: 90px
+      }
+      
+  };
+
+
+  @media (max-width: 768px){
+    .Advert{    
+        overflow: hidden;
+        margin: 10px auto;
+        border: 3px solid black;
+        display: flex;
+        border-radius: 20px;
+        padding: 30px 60px 0px 60px;
+        position: relative;
+        justify-content: space-between;        
+         width: 500px;
         flex-wrap: wrap;
         gap: 90px
       }

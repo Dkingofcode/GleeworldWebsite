@@ -86,9 +86,9 @@ const About = () => {
 
         <h1>We are a New Kind of Pharmacy</h1>
 
-        <img  style={{ display: "flex",  margin: "0 auto", width: "800px" }}  src={IntroPic} />
+        <img  style={{ display: "flex",  margin: "0 auto", width: "80%" }}  src={IntroPic} />
 
-        <p><img width={1000} src={IntroText} /></p>
+        <p><img style={{ width: "80%", height: "80%"}} src={IntroText} /></p>
       </div>  
 
     <div className='mission'>
@@ -136,8 +136,7 @@ const About = () => {
 
        <div style={{ position: 'relative' }} className='Group'>   
          <div>
-         <img  className={`active`} src={currentHistory?.image} />
-        
+         <img style={{width: "80%" }} className={`active`} src={currentHistory?.image} />
          </div>
          
        <div className='TimeLink'>

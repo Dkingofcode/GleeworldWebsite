@@ -1,7 +1,7 @@
 //import React from 'react';
 import Header from "../components/header/header";
 //import Union from "../assets/Union.png";
-//import HeroPic from "../assets/HeroSection.png";
+import HeroPic from "../assets/HeroSection.png";
 import "../App.css";
 import "./news.css";
 import NewsCard from '../components/NewsCard/NewsCard';
@@ -26,6 +26,7 @@ const News = () => {
        <div className='hero'>
          {/* <img src={Union} alt='image of broken cross'  />
           */}
+          <img style={{ width: "100%", height: "100%" }} src={HeroPic} />
        </div>
 
        <div className='trending'>
@@ -45,7 +46,7 @@ const News = () => {
 
   
       <div>
-        <Contact question={"DO you have credible health news?"} 
+        <Contact question={"Do you have credible health news?"} 
         message={"Share with us"} 
         text={"Please provide as many details as possible to help us understand and verify the  information. Our editorial team will review your submission and get back to you promptly"} 
         font={"12px"}

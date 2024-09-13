@@ -1,16 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import mainLogo from '../../assets/gleeworldlogo.png';
 import whatsapp from '../../assets/logowhatsappicon.png';
 import './header.css';
 import '../../App.css';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+
+
 
 const Header = () => {
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [color, setColor] = useState('orange');
+  const [defaultColor, setDefaultColor] = useState('black');
 
+
+  const location = useLocation();
   const phoneNumber = '08033875224'; //     
-
+  const num = 5;
   const copyPhoneNumber = () => {
     navigator.clipboard.writeText(phoneNumber).then(() => {
       alert('Phone number copied to clipboard');
@@ -23,17 +29,41 @@ const Header = () => {
     setCurrentIndex(index); // Update the selected index to trigger color change
     setIsMenuOpen(false); // Close the menu when an item is clicked
   };
+//  let index;
+
+  // const handleColorChange = () => {
+  //   for(let i = 1; i < num; i++){
+  //     if ( === 1){
+  //       setDefaultColor(color);
+  //     }
+  //     if(index === 2){
+
+  //     }
+  //     if(index === 3){
+
+  //     }
+  //     if(index === 4){
+
+  //     }
+  //   }
+  // }
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  useEffect(() => {
+     setCurrentIndex(currentIndex);
+  })
+
   return (
     <div className='header'>
       <div className='navigation'>
         <div className='Navlogo'>
-         <a href='/'><img width={50} height={60} src={mainLogo} alt='logo' /></a> 
+         <a href='/'><img  src={mainLogo} alt='logo' /></a> 
         </div>
+
+
 
         {/* Hamburger Button */}
         <button  className='hamburger' onClick={toggleMenu}>
@@ -43,33 +73,39 @@ const Header = () => {
         <nav className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
           <ul>
             <li>
-              <Link 
-                onClick={() => handleChange(0)} 
-                style={{ textDecoration: "none" }} 
+              <Link
+                         
+                onClick={() => {setCurrentIndex(0); console.log(location.pathname) }} 
+                style={{ textDecoration: "none", color: currentIndex === 0 && location.pathname === '/' ? color : defaultColor }} 
                 to="/">Home</Link>
             </li>
+            
             <li>
-              <Link 
-                onClick={() => handleChange(1)} 
-                style={{  textDecoration: "none" }} 
+              <Link
+                 
+                onClick={() => {setCurrentIndex(1);  console.log(location.pathname)}} 
+                style={{  textDecoration: "none", color: currentIndex === 1 && location.pathname === '/services' ? color : defaultColor }} 
                 to="/services">Services</Link>
             </li>
             <li>
               <Link 
-                onClick={() => handleChange(2)} 
-                style={{  textDecoration: "none" }} 
+              
+                onClick={() => {setCurrentIndex(2);  console.log(location.pathname) }} 
+                style={{  textDecoration: "none", color: currentIndex === 2 && location.pathname === '/medfinder-app' ? color : defaultColor }} 
                 to="/medfinder-app">Medfinder App</Link>
             </li>
             <li>
               <Link 
-                onClick={() => handleChange(3)} 
-                style={{  textDecoration: "none" }} 
+              
+                onClick={() => {setCurrentIndex(3);  console.log(location.pathname)}} 
+                style={{  textDecoration: "none", color: currentIndex === 3 && location.pathname === '/news' ? color : defaultColor }} 
                 to="/news">News</Link>
             </li>
             <li>
               <Link 
-                onClick={() => handleChange(4)} 
-                style={{  textDecoration: "none" }} 
+              
+                onClick={() => {setCurrentIndex(4); console.log(location.pathname)}} 
+                style={{  textDecoration: "none", color: currentIndex === 4 && location.pathname === '/about-us' ? color : defaultColor }} 
                 to="/about-us">About Us</Link>
             </li>
 

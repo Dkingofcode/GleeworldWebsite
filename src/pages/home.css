@@ -7,6 +7,11 @@
     padding: 50px;
     
   }
+
+  .Hero .hero-image img{
+    width: 500px; 
+    height: 390px;
+  }
   
   .hero-text, .hero-image {
     opacity: 1;
@@ -27,6 +32,7 @@
   }
   
   
+  
 
 
 .Services{
@@ -39,7 +45,7 @@
     display: flex;
     justify-content: center;
     gap: 15px;
-    padding: 10px 50px;
+    padding: 10px 20px;
     flex-wrap: wrap;
   }
 
@@ -63,15 +69,13 @@
 
   .Servicebtn{
     border: 1px solid burlywood;
-    margin: 50px 0px;
-    padding: 10px;
     border-radius: 50px;
-    width: 200px;
+    width: 300px;
+    height: 50px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin: 50px auto;
-    gap: 30px;
-    font-size: 12px;
+    margin: 10px auto;
     
   }
 
@@ -112,10 +116,13 @@
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    width: 100%; /* Adjust the width as per your requirement */
-    
+    width: 100%; /* Adjust the width as per your requirement */   
 }
 
+.Patners .carousel-inner {
+  display: flex;
+  gap: 90px;
+}
   
   /* Styling for the images */
   .Patners .carousel-inner img {
@@ -195,13 +202,27 @@
     color: #FF9933; 
   }
   
+.NewsLetter{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
+.NewsLetter h1{
+  
+  color: #000040;
+  font-size: 36px;
+}
+
+.NewsLetter p{
+  font-size: 15px;
+}
 
  .NewsLetter .subscribe{
     border: 2px solid #FF9933;
     margin: 0 auto;
     width: 500px;
-    height: 70px;
+    height: 55px;
     display: flex;
     justify-content: space-between;
     border-radius: 30px;
@@ -227,7 +248,18 @@
 
 
   .FooterSection {
-    padding: 0px 150px;
+    padding: 0px 90px;
+  
+    font-size: 12px;
+  }
+
+  .FooterSection p, .FooterSection a{
+     font-size: 15px;
+  }
+
+  .googleplaybtn{
+    width: 90px; 
+     
   }
 
 
@@ -238,9 +270,44 @@
 
 
 @media  (max-width: 1200px){
-  .container{
-
+  
+  .navigation{
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    padding: 10px 20px;
+    gap: 100px;
+    justify-content: center;
+    /* border-bottom: 2px solid grey; */
+    align-items: center;
+      
   }
+  
+  .navigation nav ul{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    gap: 33px;
+    
+   font-size: 10px;
+    justify-content: space-between;
+  }
+
+  .navigation .chatBtn{
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    border: 4px solid green;
+    background-color: green;
+    padding: 3px 10px;
+    text-align: center;
+    color: white;
+    align-items: center;
+    width: 190px;
+    border-radius: 30px;
+    font-size: 12px;
+  }
+
 
  
 .Hero{
@@ -335,6 +402,7 @@
     position: relative;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 700px;
   }
 
 /*   
@@ -420,5 +488,71 @@
   .left-footer span{
     color: #FF9933;
   }
+
+}
+
+
+
+@media (max-width: 968px){
+     
+   .navigation{
+    background-color: white;
+   }
+   .navigation nav ul{
+    display: none;
+    text-decoration: none;
+    list-style-type: none;
+    gap: 10px;
+    
+    font-size: 10px;
+    justify-content: space-between;
+  }
+
+  
+  .Hero .hero-image img{
+    width: 80%; 
+    height: 80%;
+  }
+
+ .Patners .Advert{
+    background-color: #000040;
+   width: 400px;
+  }
+
+  
+
+ .NewsLetter .subscribe{
+  border: 2px solid #FF9933;
+  margin: 0 auto;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 30px;
+}
+
+.NewsLetter .subscribe input {
+  padding: 5px 12px;
+  border-radius: 30px;
+  width: 70%;
+}
+
+.NewsLetter .subscribe button {
+  background-color: #000040;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  width: 25%;
+}
+
+}
+
+
+
+
+@media (max-width: 790px){
+.navigation .chatBtn{
+  display: none;
+}
 
 }
